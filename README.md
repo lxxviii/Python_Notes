@@ -2,6 +2,23 @@
 ### VALUES
 ```x=10  x // 3         # 3 Değerini alacaktır```
 
+### IDENTITY OPERATOR (IS)
+Referans Değerlerde == Value'ye bakar. === kontrolü için Identity Operatörü olan 'is' Kullanılır.
+```
+x = y = [ 1 , 2 , 3 ]
+    z= [ 1, 2, 3 ]
+print ( x == y )  # True
+print ( x == z )  # True
+print ( x is y )  # True    'is not' da kullanılabilir
+print ( x is z )  # False   'is not' da kullanılabilir
+```
+### MEMBERSHIP OPERATOR (IN)
+
+array = ['test1', 'test2']
+for ( arr in array):        # True  or 'not in'
+
+string = 'Test'
+for ( s not in string):     # True  or 'not in'
 
 ### TUPLES
 ``` 
@@ -104,3 +121,7 @@ tuple = 1, 'iki, 3
 
 ### DICTIONARY
 **KEY - VALUE** yapısı ile setlenir
+```
+dictionary = { 'k1':1, 'k2':2, 'k3':3 }
+for key, value in dictionary.items():
+```
