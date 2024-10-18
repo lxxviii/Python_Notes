@@ -110,6 +110,10 @@ len() **length**, arrayName.count('Aranacak Nitelik') **Dizi içinde Kaç tane A
 insert(Add Index, Add Value) *Add Index Character*, append(Add Value) *Sonuna Ekler*, 
 pop(Delete Index) *Belirtilen İndex Noktasını Siler*, remove(Delete Value) *Seçilen Değeri Siler*, clear() *Tüm Diziyi Siler*,
 
+```
+def arrayList = [startingIndex:EndingIndex]
+```
+
 ### TUPLE
 Dizi yapılarının [] paranteze alınmamış halidir. Genelde Paranteze alınır ancak alınması zorunlu değildir.
 ```
@@ -133,6 +137,14 @@ for item in range(50,100,20)    # (Start Value, Stop Value, Step Value)
 
 list ()                         # Liste Haline Getir
 print(list(range(50,100,20)))   # [50,70,90]
+
+Örnek Code :    myString = 'Hello'
+                years = [1990, 2000, 2010, 2020]
+        numbers = [x for x in range(10) if x%3==0 ]             # [0 9 36 81]
+                = [x if x%2 ==0 else 'Tek' for in range(1,4)]   # ['Tek', 2, 'Tek']
+                = [(x,y) for x in range(2) for y in range(2)]   # [(0,0),(0,1),(1,0),(1,1)]
+        myList = [letter for letter in myString]                # ['H','e','l','l','o']
+        ages = [2030 - year for year in years]                  # [40, 30, 20, 10]
 ```
 
 ### enumarate()
@@ -145,4 +157,15 @@ for index, item in enumatare (gretting):
 ```
 for a,b,.... in zip(list1, list2, ......)
     print(a,b .....)
+```
+### Fonksiyonlar
+
+**random()**
+random.randint(startValue, EndValue) => random.randint(1,10)
+
+**sun()**
+n sayıda parametrenin (*) toplanması işlenmesi hazır fonksiyonunu yerine getirir.
+```
+def add(*params)
+    return sum((params))
 ```
