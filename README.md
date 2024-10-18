@@ -124,4 +124,25 @@ tuple = 1, 'iki, 3
 ```
 dictionary = { 'k1':1, 'k2':2, 'k3':3 }
 for key, value in dictionary.items():
+print(key, value)
+```
+
+### range()
+```
+for item in range(50,100,20)    # (Start Value, Stop Value, Step Value)
+
+list ()                         # Liste Haline Getir
+print(list(range(50,100,20)))   # [50,70,90]
+```
+
+### enumarate()
+```
+for index, item in enumatare (gretting):
+    print(f'index : {index}, letter : {item}')    # item => greetting[Index]
+```
+
+### zip() dikey listelerden yatay listeler oluşturma işlemi için kullanılır
+```
+for a,b,.... in zip(list1, list2, ......)
+    print(a,b .....)
 ```
