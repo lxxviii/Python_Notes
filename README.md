@@ -163,9 +163,79 @@ for a,b,.... in zip(list1, list2, ......)
 **random()**
 random.randint(startValue, EndValue) => random.randint(1,10)
 
-**sun()**
+**sum()**
 n sayıda parametrenin (*) toplanması işlenmesi hazır fonksiyonunu yerine getirir.
 ```
-def add(*params)
+def add(*params):
+    print(type(*params))
     return sum((params))
+```
+n sayıda parametrenin (**) işlenmesi, dictionary yapısını oluşturarak fonksiyonunu sonucunu döndürür.
+```
+def displayUser(**params):
+    print(type(**params))
+    return for key, value in params.items()
+        print('{} is {} '.format(key, value))
+```
+Lambda Expressions
+```
+#Normal Yöntem
+def square(num): return num**2
+numbers = [1,3,5,9]
+result = list(map(square, numbers))
+for item in map (square, numbers)
+    print(item)
+print(result)
+
+#Lambda Yöntemi-1
+numbers = [1,3,5,9]
+result = list (map (lambda num : num **2, numbers))
+print(result)
+
+#Lambda Yöntemi-2
+numbers = [1,3,5,9]
+square = lambda num : num **2
+result = list (map (square, numbers))
+print(result)
+
+#Lambda Fonksiyon Olarak Kullanma
+result = square(3)
+print(result)
+
+#Lambda Fonksiyon Filter Olarak Kullanma
+numbers = [1,3,5,9,10,4]
+def checkEven(num): return num%2==0
+result = list(filter(checkEven, numbers))
+
+
+#Lambda Gömülü Fonksiyon Oluşturma
+def checkEven(num): return num%2 ==0
+result = checkEven(numbers[2])
+result = list (filter (lambda num : num%2 ==0, numbers))
+```
+
+### Fonksiyonlar Kapsama Alanı
+``` 
+#Global Scope
+x = 'Global X'
+
+def function():
+    #Local Scope
+    x = 'Local X'
+
+function()
+print(x) 
+```
+
+Global Etkili Scope Oluşturmak İçin
+``` 
+x=50
+def test()
+    global x #bu şekilde x değişkeni global x=50 değişkeninin olduğu value 'ye atanır
+    print(f'x : {x}')
+
+    x=100
+    print(f'Changed x to {x}')
+test()
+print(x)
 ```
