@@ -227,7 +227,7 @@ function()
 print(x) 
 ```
 
-Global Etkili Scope Oluşturmak İçin
+### Global Etkili Scope Oluşturmak İçin
 ``` 
 x=50
 def test()
@@ -238,4 +238,22 @@ def test()
     print(f'Changed x to {x}')
 test()
 print(x)
+```
+
+### Class Yapıları
+```
+class Person():
+    def __init__(self, fname, lname):
+        self.firstName = fname
+        self.lastName = lname
+        print('Person Created')
+
+class Student(Person):
+    def __init__(self, fname, laname):
+        Person.__init__(self, fname, lname)    # inherit işlemi için eklene initialize
+        print('Student Created')
+
+p1 = Person('P1FName','P1LName')
+s1 = Student('S1FName','P1LName')
+
 ```
