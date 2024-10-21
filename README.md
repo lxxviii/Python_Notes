@@ -252,10 +252,10 @@ class Person():
 
 class Student(Person):
     def __init__(self, fname, laname):
-        Person.__init__(self, fname, lname)    # inherit işlemi için eklene initialize
+        Person.__init__(self, fname, lname)    # inherit işlemi için eklene initialize   veya   # super.__init__(fname, laname)
         print('Student Created')
 
 p1 = Person('P1FName','P1LName')
 s1 = Student('S1FName','P1LName')
-
+[Self Özelliği için Link](https://www.informit.com/)
 ```
