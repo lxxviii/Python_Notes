@@ -247,6 +247,8 @@ class Person():
         self.firstName = fname
         self.lastName = lname
         print('Person Created')
+    def eat(self):
+        print('Person Eat')
 
 class Student(Person):
     def __init__(self, fname, laname):
