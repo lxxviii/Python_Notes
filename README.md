@@ -257,5 +257,5 @@ class Student(Person):
 
 p1 = Person('P1FName','P1LName')
 s1 = Student('S1FName','P1LName')
-[Self Özelliği için Link](https://www.informit.com/)
 ```
+[Self Özelliği için Link](https://www.informit.com/)
