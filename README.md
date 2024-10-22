@@ -259,3 +259,20 @@ p1 = Person('P1FName','P1LName')
 s1 = Student('S1FName','P1LName')
 ```
 [Self Özelliği için Link](https://www.informit.com/)
+
+
+### Error Handling
+Aşağıdaki örnek ilke Valid değerler girene kadar kontrol devam eder.
+```
+while True:
+    try:
+        x=int(input('x : ' ))
+        y=int(input('y : '))
+        print(x/y)
+    except Exception as ex:                    #Error Handling
+        print('Yanlış Bilgi Girdiniz' ex
+    else:
+        break
+    finally:
+        print('Bunun ne olduğunu biliyorum')
+```
