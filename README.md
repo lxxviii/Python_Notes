@@ -276,3 +276,16 @@ while True:
     finally:
         print('Bunun ne olduğunu biliyorum')
 ```
+
+Eper belir bir durumda hata fırlatılacaksa 'raise' keywork kullanılır.
+```
+
+def check(value)
+    import re    #Regular Expression
+    if len(value)<5:
+        raise Exception("X 5 karakterden az olamaz")
+    elif not re.search("[a-z]", value)
+        raise Exception("Parola Küçük harf içermelidir")
+    elif not re.search("/s", value)
+        raise Exception("Parola Boşluk Karakteri İçermemelidir")
+```
