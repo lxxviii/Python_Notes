@@ -279,7 +279,6 @@ while True:
 
 Eper belir bir durumda hata fırlatılacaksa 'raise' keywork kullanılır.
 ```
-
 def check(value)
     import re    #Regular Expression
     if len(value)<5:
